@@ -53,6 +53,7 @@ p, h1, h2, h3, h4, h5, h6, span, button {
   top: 10px;
   right: 5px;
   cursor: pointer;
+  z-index: 1;
 }
 
 .left, .right {
@@ -87,7 +88,6 @@ p, h1, h2, h3, h4, h5, h6, span, button {
   width: 100%;
   outline: none;
   cursor: pointer;
-  transition: all 120ms ease-in-out;
 }
 
 .button:hover {
@@ -201,16 +201,20 @@ p, h1, h2, h3, h4, h5, h6, span, button {
 
 .list {
   min-width: 484px;
-  margin: 26px 26px;
+  margin: 18px 18px;
   position: relative;
 }
 
 .list-item {
   display: flex;
-  margin-top: 8px;
-  padding-bottom: 8px;
+  padding: 8px;
   flex-direction: column;
   border-bottom: 1px solid #E1E3EA;
+  cursor: pointer;
+}
+
+.list-item:hover {
+  background: #f7f7f7;
 }
 
 .top-item {
@@ -257,6 +261,7 @@ p, h1, h2, h3, h4, h5, h6, span, button {
   font-weight: 400;
   font-size: 9px;
   margin-left: -8px;
+  cursor: pointer;
 }
 
 .user {
@@ -267,11 +272,24 @@ p, h1, h2, h3, h4, h5, h6, span, button {
   background-blend-mode: overlay;
 }
 
+.user:hover {
+  background-color: rgba(255,255,255,0);
+}
+
 .mutual > .subtitle, .credits > .subtitle {
   color: #006FBF;
   text-transform: uppercase;
   font-weight: 500;
   display: flex;
+  cursor: pointer;
+}
+
+.mutual > .subtitle:hover, .credits > .subtitle:hover {
+  color: #005694;
+}
+
+.credits > .subtitle:hover > .chip {
+  background-color: #005694;
 }
 
 .chip {
