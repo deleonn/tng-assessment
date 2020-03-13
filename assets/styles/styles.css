@@ -88,6 +88,9 @@ p, h1, h2, h3, h4, h5, h6, span, button {
   width: 100%;
   outline: none;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button:hover {
@@ -96,6 +99,17 @@ p, h1, h2, h3, h4, h5, h6, span, button {
 
 .button:active {
   opacity: 0.8;
+}
+
+.button > .icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 4px;
+}
+
+.pass > .icon {
+  width: 12px;
+  height: 12px;
 }
 
 .user-profile {
@@ -181,6 +195,10 @@ p, h1, h2, h3, h4, h5, h6, span, button {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 3px;
+}
+
+.username > .icon {
+  width: 8px;
 }
 
 .address {
