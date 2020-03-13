@@ -198,7 +198,7 @@ p, h1, h2, h3, h4, h5, h6, span, button {
 }
 
 .username > .icon {
-  width: 8px;
+  width: 14px;
 }
 
 .address {
@@ -354,4 +354,65 @@ p, h1, h2, h3, h4, h5, h6, span, button {
 
 .link {
   color: #0072BC;
+}
+
+@media(max-width: 750px) {
+  .container {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    align-items: flex-start;
+  }
+
+  .card {
+    width: 100%;
+    height: 100%;
+    max-width: 100vw;
+    flex-direction: column;
+  }
+
+  .profile {
+    max-width: 100%;
+  }
+
+  .user-profile {
+    margin: 2rem 0;
+  }
+
+  .list {
+    margin: 4px;
+    min-width: 100%;
+  }
+
+  .list-item:first-child {
+    margin-top: 12px;
+  }
+
+  .list-item:last-child {
+    margin-bottom: 12px;
+  }
+
+  .top-item {
+    flex-direction: column;
+  }
+
+  .bottom-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .connections {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    margin: 1rem 0.5rem 1rem 0.5rem;
+  }
+
+  .mutual {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .credits > .subtitle {
+    /* margin-left: 8px; */
+  }
 }
