@@ -160,27 +160,6 @@ p, h1, h2, h3, h4, h5, h6, span, button {
   box-sizing: border-box;
 }
 
-/* div.progress {
-  position: absolute;
-  width: 89px;
-  height: 89px;
-  clip: rect(0em, 1em, 1em, 0.5em);
-} */
-
-/* div.progress-inner {
-  position: absolute;
-  border: 0.08em solid #307bbb;
-  width: inherit;
-  height: inherit;
-  clip: rect(0em, 0.5em, 1em, 0em);
-  border-radius: 50%;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-} */
-
 .match {
   color: #94C1E6;
   font-size: 10px;
@@ -410,9 +389,5 @@ p, h1, h2, h3, h4, h5, h6, span, button {
   .mutual {
     width: 100%;
     justify-content: space-between;
-  }
-
-  .credits > .subtitle {
-    /* margin-left: 8px; */
   }
 }
